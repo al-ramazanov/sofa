@@ -10,6 +10,27 @@ const swiper = new Swiper('.intro-swiper', {
 	},
 
 });
+
+const blockSwiper = new Swiper('.block-swiper', {
+	// Optional parameters
+	direction: 'horizontal',
+	parallax: true,
+	spaceBetween: 50,
+	loop: false,
+	speed: 1000,
+	// And if we need scrollbar
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+	// Navigation arrows
+	/* navigation: {
+		nextEl: '.block-slider-btn.next',
+		prevEl: '.block-slider-btn.prev',
+	}, */
+
+});
+
 const sizesSwiper = new Swiper('.sizes-swiper', {
 	// Optional parameters
 	direction: 'horizontal',
